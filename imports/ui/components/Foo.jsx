@@ -7,6 +7,7 @@ import {
 import {
     Button
 } from 'antd'
+import AsyncComponent from "./AsyncComponent";
 
 export default class Foo extends Component {
     constructor(props) {
@@ -19,6 +20,8 @@ export default class Foo extends Component {
                 <Link to={"/bar"}>
                     <Button>Bar</Button>
                 </Link>
+
+                <AsyncComponent params={{foo: 123, bar: 321}}/>
             </div>
         )
     }
